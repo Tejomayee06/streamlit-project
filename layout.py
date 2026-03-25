@@ -18,10 +18,10 @@ with tab1:
 with tab2:
     st.header("Contact")
     st.write("Feel free to reach out to us!")
-with st.form("my_form"):
-    st.write("This is a form.Please fill it out.")
-    query=st.text_input("Enter your query:")
-    email=st.text_input("Enter your email:")
-    submit=st.form_submit_button("Submit")
-    if submit:
-        st.success("Form submitted successfully!")
+    with st.form("my_form"):
+         st.write("This is a form.Please fill it out.")
+         query=st.text_input("Enter your query:")
+         email=st.text_input("Enter your email:")
+         submit=st.form_submit_button("Submit")
+         if submit:
+             st.success("Form submitted successfully!")
